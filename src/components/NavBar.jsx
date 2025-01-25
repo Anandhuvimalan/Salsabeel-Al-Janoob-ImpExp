@@ -444,7 +444,10 @@ const NavbarDesktop = () => {
                         <Link
                           to={`/${service.title.toLowerCase().replace(/\s+/g, "-")}`}
                           className="w-full h-full relative z-10 flex items-center justify-start p-4"
-                          
+                          onClick={(e) => {
+                            e.preventDefault(); // Prevent default SPA behavior
+                            window.location.href = `/${service.title.toLowerCase().replace(/\s+/g, "-")}`; // Trigger full page reload
+                          }}
                         >
                           <div>
                             <h3
