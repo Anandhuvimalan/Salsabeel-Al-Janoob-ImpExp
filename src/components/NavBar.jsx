@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "@/assets/logo.svg";
 
-
-const navigate = useNavigate();
 const services = [
   {
     title: "Export & Imports",
@@ -264,7 +262,7 @@ const NavbarMobile = () => {
                           e.preventDefault(); // Prevent default SPA navigation
                           setIsMenuOpen(false); // Close the menu
                           setIsServicesOpen(false); // Close the services dropdown
-                          navigate(`/${service.title.toLowerCase().replace(/\s+/g, "-")}`); // Use React Router navigation
+                          window.location.href = `/${service.title.toLowerCase().replace(/\s+/g, "-")}`; // Trigger full page refresh
                         }}
                       >
                           {preloadedImages[index] ? (
@@ -447,10 +445,8 @@ const NavbarDesktop = () => {
                           to={`/${service.title.toLowerCase().replace(/\s+/g, "-")}`}
                           className="w-full h-full relative z-10 flex items-center justify-start p-4"
                           onClick={(e) => {
-                            e.preventDefault(); // Prevent default SPA navigation
-                            setIsMenuOpen(false); // Close the menu
-                            setIsServicesOpen(false); // Close the services dropdown
-                            navigate(`/${service.title.toLowerCase().replace(/\s+/g, "-")}`); // Use React Router navigation
+                            e.preventDefault(); // Prevent default SPA behavior
+                            window.location.href = `/${service.title.toLowerCase().replace(/\s+/g, "-")}`; // Trigger full page reload
                           }}
                         >
                           <div>

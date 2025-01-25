@@ -28,12 +28,21 @@ const HeroSection = ({ count = 3 }) => {
   const [isLottieVisible, setIsLottieVisible] = useState(true);
 
   // businessContent.js
- const overlayTexts = [
-  { heading: "Innovate with Us", subtext: "Empowering businesses with cutting-edge solutions." },
-  { heading: "Your Growth Partner", subtext: "Scaling your business to new heights." },
-  { heading: "Driving Digital Excellence", subtext: "Transforming ideas into impactful results." },
-];
-
+  const overlayTexts = [
+    {
+      heading: "Seamless Global Trade",
+      subtext: "Simplifying export and import solutions to keep your business connected worldwide.",
+    },
+    {
+      heading: "Building the Future",
+      subtext: "Expert civil contracting services for projects that stand the test of time.",
+    },
+    {
+      heading: "Where Clean Meets Care",
+      subtext: "Premium laundry services tailored for your convenience and satisfaction.",
+    },
+  ];
+  
 
   useEffect(() => {
     async function loadImages() {
