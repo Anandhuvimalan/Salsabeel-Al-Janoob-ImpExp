@@ -406,7 +406,7 @@ const NavbarDesktop = () => {
                   initial={{ opacity: 1, height: 0 }}
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 1, height: 0 }}
-                  className="absolute left-[calc(50%-50vw)] w-screen bg-gray-900 text-white overflow-hidden rounded-md z-40"
+                  className="absolute left-[calc(50%-51vw)] w-screen bg-gray-900 text-white overflow-hidden rounded-md z-40"
                 >
                   <div className="px-10 max-w-full grid grid-cols-12 py-8">
                     <div className="col-span-7">
