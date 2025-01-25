@@ -33,7 +33,7 @@ const Timeline = ({ data }) => {
       className="w-full bg-white dark:bg-neutral-950 font-sans"
       ref={containerRef}
     >
-      <div className="max-w-7xl px-6 lg:px-10 py-20">
+      <div className=" px-6 lg:px-10 py-20">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
           About Company
         </h2>
