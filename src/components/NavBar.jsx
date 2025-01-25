@@ -442,11 +442,13 @@ const NavbarDesktop = () => {
                         onMouseLeave={() => setHoveredServiceIndex(null)}
                       >
                         <Link
-                          to={`/${service.title.toLowerCase().replace(/\s+/g, "-")}`}
+                          
                           className="w-full h-full relative z-10 flex items-center justify-start p-4"
                           onClick={(e) => {
-                            e.preventDefault(); // Prevent default SPA behavior
-                            window.location.href = `/${service.title.toLowerCase().replace(/\s+/g, "-")}`; // Trigger full page reload
+                            e.preventDefault(); // Prevent default SPA navigation
+                            setIsMenuOpen(false); // Close menu
+                            setIsServicesOpen(false); // Close services dropdown
+                            window.location.href = `/${service.title.toLowerCase().replace(/\s+/g, "-")}`; // Trigger full page refresh
                           }}
                         >
                           <div>
