@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "@/assets/logo.svg";
 
+
+const navigate = useNavigate();
 const services = [
   {
     title: "Export & Imports",
@@ -262,7 +264,7 @@ const NavbarMobile = () => {
                           e.preventDefault(); // Prevent default SPA navigation
                           setIsMenuOpen(false); // Close the menu
                           setIsServicesOpen(false); // Close the services dropdown
-                          window.location.href = `/${service.title.toLowerCase().replace(/\s+/g, "-")}`; // Trigger full page refresh
+                          navigate(`/${service.title.toLowerCase().replace(/\s+/g, "-")}`); // Use React Router navigation
                         }}
                       >
                           {preloadedImages[index] ? (
@@ -376,7 +378,7 @@ const NavbarDesktop = () => {
       <div className="mx-auto px-10 w-full flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <img src={Logo} alt="Logo" className="h-8 w-8" />
-          <span className="text-lg font-bold">Salsabeel Al Janoob</span>
+          <span className="text-lg font-bold">Salsabeel Al Janoob ImpExp</span>
         </div>
 
         <div className="hidden lg:flex space-x-6 items-center">
@@ -445,8 +447,10 @@ const NavbarDesktop = () => {
                           to={`/${service.title.toLowerCase().replace(/\s+/g, "-")}`}
                           className="w-full h-full relative z-10 flex items-center justify-start p-4"
                           onClick={(e) => {
-                            e.preventDefault(); // Prevent default SPA behavior
-                            window.location.href = `/${service.title.toLowerCase().replace(/\s+/g, "-")}`; // Trigger full page reload
+                            e.preventDefault(); // Prevent default SPA navigation
+                            setIsMenuOpen(false); // Close the menu
+                            setIsServicesOpen(false); // Close the services dropdown
+                            navigate(`/${service.title.toLowerCase().replace(/\s+/g, "-")}`); // Use React Router navigation
                           }}
                         >
                           <div>
