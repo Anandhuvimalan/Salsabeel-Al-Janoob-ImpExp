@@ -83,7 +83,7 @@ const Testimonials1 = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Salsabeel Al Janoob
+          Your Trusted Partner in Diverse Service Solutions
         </motion.h1>
         <motion.p
           className="text-gray-300 text-base mt-3 leading-7 tracking-wide"
@@ -91,9 +91,7 @@ const Testimonials1 = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          We are an import-export company delivering exceptional services in
-          various fields, including chemical waste management, civil contracts,
-          and more.
+          From civil infrastructure to laundry management, retail development, education, and well-being services, we deliver tailored solutions designed to empower businesses and individuals with excellence and innovation.
         </motion.p>
       </div>
 

@@ -38,7 +38,11 @@ const Timeline = ({ data }) => {
           About Company
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          Description
+        Salsabeel Al Janoob is a globally recognized enterprise offering comprehensive import, export, and service solutions. Established in 1975 in the Sultanate of Oman under the visionary leadership of Chairman Khalfan Abdullah Khalfan Al Mandary, the company has built a legacy of excellence, trust, and innovation. Expanding its reach to India in 2024, Salsabeel Al Janoob continues to serve as a bridge connecting opportunities across borders.
+
+With a diverse portfolio of services, including specialized waste management, civil contracting, retail consultancy, educational guidance, and counseling services, Salsabeel Al Janoob caters to a wide range of industries and individual needs. Our unwavering commitment to quality and customer satisfaction has solidified our reputation as a reliable partner for businesses and individuals alike.
+
+Backed by a dedicated leadership team and a skilled workforce, we aim to empower communities, enhance businesses, and build sustainable futures. Whether managing international trade logistics or delivering tailored service solutions, Salsabeel Al Janoob remains at the forefront of innovation and excellence.
         </p>
       </div>
       <div ref={ref} className="relative max-w-7xl pb-20">
